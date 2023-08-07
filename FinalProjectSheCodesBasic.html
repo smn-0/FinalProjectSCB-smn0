@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project: Back To School</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 50%,
+          #89d2fd 10%,
+          #fff1bc 90%
+        );
+        margin: auto;
+      }
+
+      h1 {
+        text-align: center;
+        color: #935e18;
+        font-weight: lighter;
+        line-height: 80px;
+        border: 20px;
+        width: 400px;
+        margin: auto;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+      }
+
+      p {
+        text-align: center;
+        font-weight: lighter;
+        margin: auto;
+        width: 70%;
+        max-width: 700px;
+        padding-top: 20px;
+        margin-bottom: 3px;
+        padding-bottom: 3px;
+      }
+
+      button {
+        color: #a17238;
+        background-color: #89d2fd;
+        border: none;
+        border-radius: 30%;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 5px 13px 5px;
+        box-shadow: inset 5px 5px 5px #ffffff30;
+        box-shadow: 5px 5px 5px #00008040;
+        margin-left: 5px;
+      }
+
+      button:hover {
+        cursor: pointer;
+        color: #353574;
+        box-shadow: inset 5px 5px 5px #00008040;
+        box-shadow: 2px 2px 2px #00008040;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+      }
+
+      h3 {
+        text-align: center;
+        color: #353574;
+        margin-top: 3px;
+      }
+
+      .article {
+        text-align: center;
+        font-size: 12px;
+        text-decoration: none;
+        margin: 20px 0px 0px;
+        color: #353574;
+        font-weight: bold;
+      }
+      .article:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .website-intro {
+        font-size: 13px;
+        font-weight: thinner;
+        margin-top: 3px;
+        padding-top: 3px;
+      }
+      .buttonText {
+        text-align: center;
+        margin: auto;
+        padding-top: 30px;
+        color: #353574;
+        font-size: small;
+      }
+      .signature {
+        color: #353574;
+        text-align: center;
+        margin: auto;
+        font-weight: bolder;
+        display: block;
+        font-size: 11px;
+        margin-top: 20px;
+      }
+      .me {
+        text-decoration: none;
+        color: #a17238;
+        border-radius: 10%;
+      }
+      .me:hover {
+        cursor: pointer;
+        font-style: italic;
+        box-shadow: 2px 2px 2px #89d2fd90;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>It's That Time Again!✏️</h1>
+    <h3>School supplies should be in all students reach for their success!</h3>
+    <img
+      src="https://cdn.create.vista.com/api/media/medium/296438652/stock-photo-top-view-various-school-supplies?token="
+      width="300px"
+    />
+    <div>
+      <span>
+        <p>
+          Basic school supplies provide much needed structure to learning.
+          Having appropriate school supplies decreases classroom disruptions
+          that often hinder effective teaching and learning. Students without
+          supplies can't fully participate in educational activities and they
+          frequently distract others.
+          <span class="statement">
+            <span class="website-intro">
+              Read more from
+            </span>
+            <i>
+              <a href="https://www.somerset-kentucky.com/opinion/school-supplies-the-tools-of-learning/article_215dc4d0-1998-11ed-9583-ffc41575c0eb.html#:~:text=Basic%20school%20supplies%20provide%20much,and%20they%20frequently%20distract%20others."
+                class="article"> 
+                On Your Side 10
+              </a>
+            </i>
+          </span>
+        </p>
+      </span>
+    </div>
+
+    <div class="buttonText">
+      <span>Want Free School Supplies? ➡️ ➡️ ➡️</span>
+      <span><button class="signUp">Sign Me Up!</button></span>
+    </div>
+    <span class="signature">
+      Coded by
+      <span>
+        <a href="https://www.linkedin.com/in/sarah-mv-nieves/" class="me">
+          SarahMVNieves
+        </a>
+      </span>
+    </span>
+    <script>
+      function signUp() {
+        let name = prompt("Whats your name?");
+        let email = prompt("Whats your email?");
+        if (!email) alert("Have a great school year!");
+        else
+          alert(
+            "We will reach out to you at " +
+              email +
+              ", for more information to get your student their school supplies!"
+          );
+      }
+      let signUpButton = document.querySelector("button");
+      signUpButton.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>
